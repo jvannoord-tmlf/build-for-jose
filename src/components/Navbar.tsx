@@ -13,7 +13,7 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-foreground/80 backdrop-blur-md">
       <div className="container mx-auto px-6 flex items-center justify-between h-16">
         <a href="#" className="font-display text-lg text-primary-foreground font-semibold tracking-wide">
-          JC De La Rosa
+          JC Rosas Landscaping
         </a>
         <div className="hidden md:flex items-center gap-8">
           {links.map((l) => (
@@ -21,8 +21,8 @@ const Navbar = () => {
               {l.label}
             </a>
           ))}
-          <a href="tel:+15551234567" className="bg-primary text-primary-foreground text-sm px-5 py-2 rounded-md font-medium hover:opacity-90 transition-opacity">
-            (555) 123-4567
+          <a href="tel:+16197948510" className="bg-primary text-primary-foreground text-sm px-5 py-2 rounded-md font-medium hover:opacity-90 transition-opacity">
+            (619) 794-8510
           </a>
         </div>
         <button onClick={() => setOpen(!open)} className="md:hidden text-primary-foreground" aria-label="Toggle menu">

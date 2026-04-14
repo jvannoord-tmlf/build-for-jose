@@ -12,7 +12,7 @@ const About = () => {
           <p className="text-warm-gold font-medium tracking-widest uppercase text-sm mb-3">About</p>
           <h2 className="text-4xl md:text-5xl font-bold mb-8">Rooted in Quality</h2>
           <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-            Jose Carmona De La Rosa has been transforming residential and commercial outdoor spaces with professional landscaping services for over two decades. From detailed garden designs to full property overhauls, every project is handled with care, precision, and a deep respect for the natural environment.
+            JC Rosas Landscaping has been transforming residential and commercial outdoor spaces with professional landscaping services for over two decades. From detailed garden designs to full property overhauls, every project is handled with care, precision, and a deep respect for the natural environment.
           </p>
           <p className="text-muted-foreground text-lg leading-relaxed mb-12">
             Licensed, insured, and passionate about creating beautiful landscapes — Jose and his team deliver results that grow more stunning with each passing season.
