@@ -8,30 +8,42 @@ const Contact = () => {
     email: "",
     message: "",
   });
+  const [sending, setSending] = useState(false);
   const { toast } = useToast();
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
-    const { name, phone, email, message } = formData;
+    const { name, email, message } = formData;
     if (!name || !email || !message) {
       toast({ title: "Please fill in your name, email, and message.", variant: "destructive" });
       return;
     }
 
-    const subject = encodeURIComponent(`New Contact Form Submission from ${name}`);
-    const body = encodeURIComponent(
-      `Name: ${name}\nPhone: ${phone}\nEmail: ${email}\n\nMessage:\n${message}`
-    );
+    setSending(true);
+    try {
+      const res = await fetch("/contact.php", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+      const data = await res.json();
 
-    window.location.href = `mailto:josefall1020@live.com?subject=${subject}&body=${body}`;
-
-    toast({ title: "Opening your email client..." });
-    setFormData({ name: "", phone: "", email: "", message: "" });
+      if (res.ok && data.success) {
+        toast({ title: "Message sent successfully!" });
+        setFormData({ name: "", phone: "", email: "", message: "" });
+      } else {
+        toast({ title: data.message || "Failed to send message.", variant: "destructive" });
+      }
+    } catch {
+      toast({ title: "Something went wrong. Please try again.", variant: "destructive" });
+    } finally {
+      setSending(false);
+    }
   };
 
   return (
@@ -51,8 +63,8 @@ const Contact = () => {
           </div>
           <input type="email" name="email" value={formData.email} onChange={handleChange} placeholder="Email Address" className="w-full bg-card border border-border rounded-md px-4 py-3 text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/40" />
           <textarea name="message" value={formData.message} onChange={handleChange} placeholder="Tell us about your project..." rows={4} className="w-full bg-card border border-border rounded-md px-4 py-3 text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/40 resize-none" />
-          <button type="submit" className="w-full bg-primary text-primary-foreground py-3.5 rounded-md font-medium hover:opacity-90 transition-opacity">
-            Send Message
+          <button type="submit" disabled={sending} className="w-full bg-primary text-primary-foreground py-3.5 rounded-md font-medium hover:opacity-90 transition-opacity disabled:opacity-50">
+            {sending ? "Sending..." : "Send Message"}
           </button>
         </form>
         <div className="mt-16 flex flex-wrap justify-center gap-10 text-muted-foreground text-sm">
