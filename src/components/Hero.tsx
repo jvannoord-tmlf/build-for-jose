@@ -5,7 +5,7 @@ const Hero = () => {
     <section className="relative min-h-screen flex items-center">
       <img
         src={heroImg}
-        alt="Jose Carmeno De La Rosa's carpentry workshop"
+        alt="Jose Carmona De La Rosa's carpentry workshop"
         className="absolute inset-0 w-full h-full object-cover"
         width={1920}
         height={1080}
@@ -17,7 +17,7 @@ const Hero = () => {
             Carpenter & Contractor
           </p>
           <h1 className="text-5xl md:text-7xl font-bold text-primary-foreground leading-tight mb-6">
-            Jose Carmeno<br />De La Rosa
+            Jose Carmona<br />De La Rosa
           </h1>
           <p className="text-lg md:text-xl text-primary-foreground/80 mb-8 max-w-lg leading-relaxed">
             Bringing craftsmanship and quality to every project — from custom woodwork to full home renovations.
