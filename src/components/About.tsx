@@ -10,12 +10,12 @@ const About = () => {
       <div className="container mx-auto px-6">
         <div className="max-w-3xl mx-auto text-center">
           <p className="text-warm-gold font-medium tracking-widest uppercase text-sm mb-3">About</p>
-          <h2 className="text-4xl md:text-5xl font-bold mb-8">Built on Trust & Skill</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-8">Rooted in Quality</h2>
           <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-            Jose Carmona De La Rosa has been serving homeowners and businesses with exceptional carpentry and general contracting services for over two decades. From intricate custom woodwork to major renovations, every project is handled with meticulous attention to detail and a commitment to quality that stands the test of time.
+            Jose Carmona De La Rosa has been transforming residential and commercial outdoor spaces with professional landscaping services for over two decades. From detailed garden designs to full property overhauls, every project is handled with care, precision, and a deep respect for the natural environment.
           </p>
           <p className="text-muted-foreground text-lg leading-relaxed mb-12">
-            Licensed, insured, and dedicated to exceeding expectations — Jose and his team bring professionalism and craftsmanship to every job, big or small.
+            Licensed, insured, and passionate about creating beautiful landscapes — Jose and his team deliver results that grow more stunning with each passing season.
           </p>
           <div className="grid grid-cols-3 gap-8">
             {stats.map((s) => (

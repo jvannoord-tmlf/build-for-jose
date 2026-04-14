@@ -1,11 +1,11 @@
-import heroImg from "@/assets/hero-carpentry.jpg";
+import heroImg from "@/assets/hero-landscaping.jpg";
 
 const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center">
       <img
         src={heroImg}
-        alt="Jose Carmona De La Rosa's carpentry workshop"
+        alt="Jose Carmona De La Rosa's landscaping work"
         className="absolute inset-0 w-full h-full object-cover"
         width={1920}
         height={1080}
@@ -14,13 +14,13 @@ const Hero = () => {
       <div className="relative z-10 container mx-auto px-6">
         <div className="max-w-2xl animate-fade-in-up">
           <p className="text-warm-gold font-medium tracking-widest uppercase text-sm mb-4">
-            Carpenter & Contractor
+            Professional Landscaping
           </p>
           <h1 className="text-5xl md:text-7xl font-bold text-primary-foreground leading-tight mb-6">
             Jose Carmona<br />De La Rosa
           </h1>
           <p className="text-lg md:text-xl text-primary-foreground/80 mb-8 max-w-lg leading-relaxed">
-            Bringing craftsmanship and quality to every project — from custom woodwork to full home renovations.
+            Transforming outdoor spaces with expert design, installation, and maintenance — creating landscapes that inspire.
           </p>
           <div className="flex flex-wrap gap-4">
             <a

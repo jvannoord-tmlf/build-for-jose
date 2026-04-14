@@ -1,22 +1,22 @@
-import customImg from "@/assets/services-custom.jpg";
-import renovationImg from "@/assets/services-renovation.jpg";
-import outdoorImg from "@/assets/services-outdoor.jpg";
+import lawnImg from "@/assets/services-lawn.jpg";
+import gardenImg from "@/assets/services-garden.jpg";
+import hardscapeImg from "@/assets/services-hardscape.jpg";
 
 const services = [
   {
-    title: "Custom Woodwork",
-    description: "Handcrafted cabinets, furniture, and built-ins tailored to your vision with premium materials.",
-    image: customImg,
+    title: "Lawn Care & Maintenance",
+    description: "Regular mowing, fertilization, aeration, and weed control to keep your lawn lush and healthy year-round.",
+    image: lawnImg,
   },
   {
-    title: "Home Renovations",
-    description: "Full-scale kitchen, bathroom, and living space remodels that transform your home.",
-    image: renovationImg,
+    title: "Garden Design & Planting",
+    description: "Custom flower beds, shrub installation, tree planting, and seasonal color that brings your yard to life.",
+    image: gardenImg,
   },
   {
-    title: "Outdoor Structures",
-    description: "Decks, pergolas, fences, and outdoor living spaces built to last through the seasons.",
-    image: outdoorImg,
+    title: "Hardscaping & Patios",
+    description: "Stone walkways, retaining walls, patios, and outdoor features that add beauty and value to your property.",
+    image: hardscapeImg,
   },
 ];
 
