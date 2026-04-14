@@ -5,7 +5,7 @@ const Hero = () => {
     <section className="relative min-h-screen flex items-center">
       <img
         src={heroImg}
-        alt="Jose Carmona De La Rosa's landscaping work"
+        alt="JC Rosas Landscaping's landscaping work"
         className="absolute inset-0 w-full h-full object-cover"
         width={1920}
         height={1080}
@@ -17,7 +17,7 @@ const Hero = () => {
             Professional Landscaping
           </p>
           <h1 className="text-5xl md:text-7xl font-bold text-primary-foreground leading-tight mb-6">
-            Jose Carmona<br />De La Rosa
+            JC Rosas<br />Landscaping
           </h1>
           <p className="text-lg md:text-xl text-primary-foreground/80 mb-8 max-w-lg leading-relaxed">
             Transforming outdoor spaces with expert design, installation, and maintenance — creating landscapes that inspire.
