@@ -15,7 +15,7 @@
     --popover: 36 33% 97%;
     --popover-foreground: 24 10% 15%;
 
-    --primary: 28 56% 30%;
+    --primary: 142 40% 28%;
     --primary-foreground: 36 33% 97%;
 
     --secondary: 36 20% 90%;
@@ -32,7 +32,7 @@
 
     --border: 30 20% 85%;
     --input: 30 20% 85%;
-    --ring: 28 56% 30%;
+    --ring: 142 40% 28%;
 
     --radius: 0.5rem;
 
@@ -46,7 +46,7 @@
     --sidebar-ring: 217.2 91.2% 59.8%;
 
     --hero-overlay: linear-gradient(to right, hsla(24, 10%, 10%, 0.75), hsla(24, 10%, 10%, 0.3));
-    --warm-gold: 38 70% 55%;
+    --warm-gold: 80 60% 45%;
   }
 }
 
