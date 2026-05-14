@@ -8,6 +8,7 @@ const thumbs = [
   { src: `${IMG_BASE}/walkway.jpg`, alt: "Stone walkway" },
   { src: `${IMG_BASE}/stairs.jpg`, alt: "Hardscape stairs" },
   { src: `${IMG_BASE}/other.jpg`, alt: "Completed landscaping project" },
+  { src: `${IMG_BASE}/pond.jpg`, alt: "Custom pond installation" },
 ];
 
 const Gallery = () => {
