@@ -22,3 +22,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Local deploy script (server-specific paths)
+cpdist.sh
