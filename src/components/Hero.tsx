@@ -1,10 +1,8 @@
-import heroImg from "@/assets/hero-landscaping.jpg";
-
 const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center">
       <img
-        src={heroImg}
+        src="https://jcrosaslandscaping.grpub.net/img/otay.jpg"
         alt="JC Rosas Landscaping's landscaping work"
         className="absolute inset-0 w-full h-full object-cover"
         width={1920}

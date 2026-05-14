@@ -1,22 +1,20 @@
-import lawnImg from "@/assets/services-lawn.jpg";
-import gardenImg from "@/assets/services-garden.jpg";
-import hardscapeImg from "@/assets/services-hardscape.jpg";
+const IMG_BASE = "https://jcrosaslandscaping.grpub.net/img";
 
 const services = [
   {
     title: "Lawn Care & Maintenance",
     description: "Regular mowing, fertilization, aeration, and weed control to keep your lawn lush and healthy year-round.",
-    image: lawnImg,
+    image: `${IMG_BASE}/other.jpg`,
   },
   {
     title: "Garden Design & Planting",
     description: "Custom flower beds, shrub installation, tree planting, and seasonal color that brings your yard to life.",
-    image: gardenImg,
+    image: `${IMG_BASE}/pond.jpg`,
   },
   {
     title: "Hardscaping & Patios",
     description: "Stone walkways, retaining walls, patios, and outdoor features that add beauty and value to your property.",
-    image: hardscapeImg,
+    image: `${IMG_BASE}/walkway.jpg`,
   },
 ];
 
